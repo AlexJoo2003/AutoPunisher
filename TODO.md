@@ -1,3 +1,3 @@
 # TODO
-[ ] Finish the todo list
-[ ] Delegate the project
+- [ ] Finish the todo list
+- [ ] Delegate the project
