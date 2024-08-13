@@ -57,17 +57,31 @@ This file will hold a database of banned players using this plugin. This is wher
 ```
 ## commands
 1. `autopunish` - will show the help message which lists the subcommands
+
   Alias: `ap`
+  
   Permission: `ap`
-3. `ap punish {Player} {reason} {alternative message}` - the punish subcommand is the main part of the plugin. This command will prompt confirmation if enabled.
+  
+2. `ap punish {Player} {reason} {alternative message}` - the punish subcommand is the main part of the plugin. This command will prompt confirmation if enabled.
+  
   Alias: `ap p`
+  
   Permission: `ap.punish`
+  
   `{Player}`: The first argument is for the **targeted player**. You can place the playerId of the target which can be found in the mod panel. If `allow_multiban` config is set to `true` then it is possible to target **multiple** players at the same time by seperating the playerIds with a **.** (dot). If the player is not online, it is possible to ban him using his **steamId** instead (multibans won't work in this situation).
+  
   `{reason}`: Second argument is the reason **codename**, the reason has to be included in the `config.yaml` and can **not** have any spaces or special characters. The command will not work if the reason is not specified in the configs.
+  
   `{alternative message}`: Every word past the reason codename is going to be a message that will be sent as a replacement to the predefined message in the configs. The command will not work if the `allow_message` is set to false and the sender doesn't have the `ap.message` **permission**.
-5. `ap clear {Player}` - clears the players ban reasons from the database (does **not** unban the targeted player). This command will prompt confirmation if enabled.
+
+3. `ap clear {Player}` - clears the players ban reasons from the database (does **not** unban the targeted player). This command will prompt confirmation if enabled.
+
   Alias: `ap cl`
+  
   Permission: `ap.clear`
+  
   `{Player}`: Same as above but does not support multiban.
-7. `ap confirm` - the command to confirm the previous issued command in the last 30 seconds if the `confirm_ban` is set to `true`, does not do anything by itself.
+
+4. `ap confirm` - the command to confirm the previous issued command in the last 30 seconds if the `confirm_ban` is set to `true`, does not do anything by itself.
+
   Alias: `ap y`
