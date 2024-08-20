@@ -1,0 +1,13 @@
+﻿reasons:
+  - name: "reason1"
+    type: "set"
+    durations:
+      - 1
+      - 2
+      - 3
+  - name: "customreason2"
+    type: "set"
+    durations:
+      - 100
+      - 555
+      - 123123
