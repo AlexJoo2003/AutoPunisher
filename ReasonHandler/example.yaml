@@ -1,0 +1,15 @@
+﻿reasons:
+  - name: "reason1" # Random Comment
+    type: "set" # doesnt need capitalisation
+    durations:
+      - 1
+      - "2" # yamldotnet converts to int automatically
+      - 3
+    aliases: ["r1", "r2"] # Lists can be written this way too
+    message: "Hello World"
+  - name: "test reason"
+    type: "linear"
+    variable: 60
+    aliases:
+      - "t1"
+      - t2
