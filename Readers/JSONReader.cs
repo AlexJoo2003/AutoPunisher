@@ -9,7 +9,6 @@ using Events;
 using Exiled.API.Enums;
 using Exiled.API.Features;
 
-
 public class JSONReader
 {
     static JObject wholeJsonFile;

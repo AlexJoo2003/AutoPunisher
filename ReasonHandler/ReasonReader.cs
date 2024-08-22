@@ -10,6 +10,8 @@ public class ReasonReader
     {
         Reasons = ReadReasonsFromFile(filePath);
     }
+    
+    // Reads the yaml file provided and deserializes it into Reasons class
     private Reasons ReadReasonsFromFile(string filePath)
     {
         var deserializer = new DeserializerBuilder()
@@ -29,6 +31,7 @@ public class ReasonReader
 
         return Reasons;
     }
+    // checks if the deserializer has done everything correctly
     private string IsValid(Reasons? reasons)
     {
         if (reasons == null)
