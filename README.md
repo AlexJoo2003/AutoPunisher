@@ -19,7 +19,7 @@ autopunisher:
 This file is going to be used to set up reasons and the durations those reasons should have.
 ```yaml
 reasons:
-  racism:
+  - name: "racism"
     type: "set" # uses set ban durations, which have to start with 1 and end with max.
     1: 3600 # an hour in seconds
     2: 3600 * 48 # 2 days supports math
@@ -28,12 +28,12 @@ reasons:
     message: "You have been banned for {reason}. This is occurance number {amount} therefore the ban duration is {duration}"
     # {amount} of times the player has been punished for the specific reason, {duration} is how long the player will be banned for.
     reason: "Racism" # will be inserted in the message above
-  sabotage:
+  - name: "sabotage"
     type: "linear" #  extra option for linear punishment
     variable: 60 # Every x ban would result to 60 * x duration ban
     1: 123 # because the type is "linear" this config doesn't do anything (but will be saved incase you want to change the type)
     ...
-  deaththreat:
+  - name: "deaththreat"
     type: "exponential" # extra option for exponential punishment
     variable: 60 # Every x ban would result in 60^x ban duration.
     ...
