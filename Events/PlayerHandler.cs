@@ -8,7 +8,7 @@ internal sealed class PlayerHandler
 {
     public void OnJumping(JumpingEventArgs ev)
     {
-        if (AutoPunisher.Instance.Config.BroadcastJumps)
+        if (Plugin.Instance.Config.BroadcastJumps)
         {
             Exiled.API.Features.Broadcast test = new Exiled.API.Features.Broadcast();
             ev.Player.Broadcast(new Broadcast("you have jumped!", 1));
