@@ -4,6 +4,7 @@ obj/
 riderModule.iml
 /_ReSharper.Caches/
 .idea/
+.vs/
 .git/
 AutoPunisher.csproj
 AutoPunisher.sln
