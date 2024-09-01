@@ -40,9 +40,9 @@ public class Reason
                 }
                 return Durations[repeatedOffences - 1];
             case ReasonType.Exponential:
-                break;
+                return (int)(repeatedOffences * Variable)!;
             case ReasonType.Linear:
-                break;
+                return (int)(Math.Pow((double)Variable!, repeatedOffences));
         }
         return -1;
     }
