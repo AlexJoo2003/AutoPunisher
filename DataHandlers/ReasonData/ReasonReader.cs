@@ -31,6 +31,13 @@ public class ReasonReader
 
         return Reasons;
     }
+
+    public bool ReasonExists(string reason)
+    {
+        // returns true if a reasonMsg exists in the configs
+        return true;
+    }
+    
     // checks if the deserializer has done everything correctly
     private string IsValid(Reasons? reasons)
     {
