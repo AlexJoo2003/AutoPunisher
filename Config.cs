@@ -21,6 +21,12 @@ public class Config : IConfig
     [Description("If enabled, allows adding alternative messages to the ban.")]
     public bool AllowMessage { get; set; } = true;
 
-[Description("Should a broadcast appear everytime someone jumps?")]
+    [Description("Should a broadcast appear everytime someone jumps?")]
     public bool BroadcastJumps { get; set; } = true;
+
+    [Description("Where to store the banned.json file? Absolute path only.")]
+    public string BannedPlayersPath { get; set; } = "default location";
+    
+    [Description("Where to store the config.yaml file? Absolute path only.")]
+    public string ConfigPath { get; set; } = "default location";
 }

@@ -21,7 +21,6 @@ public class Punish : ICommand
             player.BanPlayer(ban);
         }
         
-        
         return true;
     }
 
